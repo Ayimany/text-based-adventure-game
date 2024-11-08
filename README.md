@@ -19,6 +19,12 @@ To build the project, currently, compile the main file (`main.cc`). This project
 is mean to be built on `C++23` so do not forget to specify `-std=c++23`. This
 project will migrate to CMake soon. Bash and BAT scripts will be provided, too.
 
+```sh
+clang++ -std=c++23 src/main.cc
+# OR
+g++ -std=c++23 src/main.cc
+```
+
 # How-To
 For each room, you will be presented with a set of options. Enter the letter or number associated with the option. There will also be a set of options that you can access at any time available atop all the room-specific options.
 

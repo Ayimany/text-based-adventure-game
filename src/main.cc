@@ -2,6 +2,8 @@
 
 #include <algorithm>
 #include <cmath>
+#include <iostream>
+#include <print>
 
 namespace ag {
 
@@ -66,5 +68,14 @@ namespace ag {
 
 auto
 main() -> int {
+    std::string name;
+    std::println("What is your name?");
+
+    std::cin >> name;
+    ag::player the_player { std::move(name) };
+
+    std::println("Welcome, {}. Your adventure will begin shortly.",
+                 the_player.get_name());
+
     return 0;
 }
